@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='yaml-helper',
-    version='0.0.1',
+    version='0.0.2',
     author='Randy Cahya Wihandika',
     author_email='rendicahya@gmail.com',
     description='Helper methods to read and write .yml files.',
