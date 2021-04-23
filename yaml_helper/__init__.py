@@ -1,1 +1,1 @@
-from yaml_helper.helper import load, add
+from yaml_helper.yaml_helper import YAML

@@ -1,18 +1,22 @@
 # YAML Helper
 
-Helper methods to read and write `.yml` files.
+Helper methods to read and write YAML files.
 
 ## Installation
 `pip install yaml-helper`
 
 ## Usage
 ```
-import yaml_helper as yaml
+from yaml_helper import YAML
 
 
-yml_file = 'config.yml'
-yml = yaml.load(yml_file)
-additional = {'driver': 'mysqli'}
+yaml = YAML('config.yml')
+config = yaml.load()
 
-yaml.add(additional)
+print(config['ip_address'])
+print(config['port'])
+
+yaml.add({'driver': 'mysqli'})
+yaml.add({'username': 'admin'})
+yaml.write()
 ```
